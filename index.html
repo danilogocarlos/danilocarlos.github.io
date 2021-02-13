@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/76a6ad48bb.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <title>Hello, recruiters!</title>
+
+    <style>
+        body {
+            background-color: #282A36;
+            font-family: 'Poppins';
+            font-size: 16px;
+            line-height: 24px;
+            color: #C4C4C4;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            color: #F8F8F2;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            color: #C4C4C4;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #C4C4C4;
+        }
+        .text-2 {
+            font-size: 12px;
+            line-height: 12px;
+            color: #C4C4C4;
+        }
+        .container {
+            max-width: 800px;
+        }
+
+        button.nav-link {
+            font-size: 16px;
+            color: #C4C4C4;
+            padding: 1rem 0 0 0;
+            margin: 0 1rem;
+            background-color: transparent !important;
+            border: 0;
+        }
+        button.nav-link.active {
+            border-bottom: 1px solid #FFB86C;
+        }
+
+        a.link-primary {
+            color: #FFB86C;
+        }
+
+        ul.custom-list {
+            list-style: none;
+        }
+        ul.custom-list li::before {
+            content: "\2022";
+            color: #FFB86C;
+            font-size: 22px;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .image-project {
+            width: 800px;
+            height: 300px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills justify-content-end" id="pageTab">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">INÍCIO</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">PROJETOS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="pill" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">CONTATO</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content mb-5" id="pageTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/photo.jpg" class="img-fluid rounded-circle" style="border: 6px solid #F8F8F2; width: 150px; height: 150px;" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5" id="intro">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>Introdução</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="text-1">Olá! Me chamo Danilo Carlos. Seja bem vindo ao meu portifólio. Sou formado e mestre em Ciência da Computação e aficcionado por tecnologia.</p>
+                        <p class="text-1">Tenho experiência profissional como desenvolvedor Fullstack em projetos pequenos e de grande porte. Desde aplicativos com a partir de 10 usuários até uma plataforma complexa com mais de 150.000 usuários.</p>
+                        <p class="text-1">Nas horas vagas gosto consumir conteúdos relacionados a TI e experimentar novos aprendizados. Sou apaixonado pelo desenvolvimento de interfaces especialmente de aplicativos móveis com Flutter.</p>        
+                        <p>
+                            <a href="https://drive.google.com/file/d/1SZmRLboMVieacNCbsSVCUBHkvlwCob39/view?usp=sharing" class="btn btn-light">Download Currículo</a>
+                            <a href="https://github.com/danilogocarlos" class="btn btn-light"><i class="fa fa-github-alt"></i></a>
+                            <a href="https://linkedin.com/in/danilogocarlos" class="btn btn-light"><i class="fa fa-linkedin"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5" id="skills">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>Habilidades técnicas</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <ul class="custom-list">
+                            <li class="mb-2">Dart/Flutter SDK<br/><small class="text-2">GetX, MobX, Modular, Hive</small></li>
+                            <li class="mb-2">Front-end Web development<br/><small class="text-2">HTML5, CSS3, Bootstrap 3+, Javascript, VueJs</small></li>
+                            <li class="mb-2">Back-end Web development<br /><small class="text-2">PHP, Laravel, Redis, Dart</small></li>
+                            <li class="mb-2">System Integration<br /><small class="text-2">Json, REST Api</small></li>
+                            <li class="mb-2">Database<br /><small class="text-2">MySQL, PostgreSql, SQFlite</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5" id="skills">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>Soft Skills</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <ul class="custom-list">
+                            <li class="mb-2">Cooperatividade e colaboração<br/><small class="text-2">Tenho prazer em ajudar e compartilhar conhecimento.</small></li>
+                            <li class="mb-2">Trabalho em equipe<br/><small class="text-2">Procuro sempre manter uma relação amistosa com meus colegas.</small></li>
+                            <li class="mb-2">Flexibilidade<br /><small class="text-2">Consigo me adaptar bem a mudanças.</small></li>
+                            <li class="mb-2">Resiliência<br /><small class="text-2">Busco sempre superar as adversidades diante de situações difíceis.</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+            <div class="container mb-5" id="skills">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>O que eu tenho feito (projetos)...</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-session-item mb-5">
+                <div class="container mb-5">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="rounded-3 image-project" style="background-image: url('images/bee-delivery.png');"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Bee Delivery</h3>
+                            <p>A Bee Delivery é uma plataforma do ramo de logística de destaque no mercado brasileiro. Com centenas de milhares de usuários por todo o país, a Bee Delivery disponibiliza aplicativos mobile e web para integrar empresas e entregadores.</p>
+                            <p>Nesse projeto trabalhei como desenvolvedor Back-end e Front-end contemplando as seguintes features:</p>
+                            
+                            <ul class="custom-list mb-3">
+                                <li class="mb-2">Novo site institucional<br/><small class="text-2">Desenvolvimento integral do o site institucional da Bee Delivery.</small></li>
+                                <li class="mb-2">Novo painel das empresas<br/><small class="text-2">Desenvolvimento das interface de usuário do painel das empresas.</small></li>
+                                <li class="mb-2">Painel do entregador<br /><small class="text-2">Desenvolvimento parcial de interfaces e de funcionalidades do painel do entregador.</small></li>
+                                <li class="mb-2">Painel da franquia<br /><small class="text-2">Desenvolvimento parcial de interfaces e funcionalidades do painel da franquia.</small></li>
+                                <li class="mb-2">Painel de atendimento<br /><small class="text-2">Desenvolvimento das interfaces e funcionalidades do painel de atendimento.</small></li>
+                            </ul>
+
+                            <p class="mb-4">Ferramentas utilizadas: PHP, Laravel, Redis, MySQL, VueJs, Bootstrap 3 e 4, VueJs entre outros.</p>
+
+                            <p><a href="https://beedelivery.com.br/" class="btn btn-light">Acessar site</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-session-item mb-5">
+                <div class="container mb-5">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="rounded-3 image-project" style="background-image: url('images/bee-mercado.png');"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Bee Mercado</h3>
+                            <p>Por causa da pandemia (COVID-19), o comercio inteiro tendo que fechar suas portas, a Bee cria um produto para aumentar as vendas dos pequenos e grande comerciantes locais. O Bee mercado é uma ferramenta que permite o lojista disponibilizar o seu catálogo de produtos online e realize o atendimento via Whatsapp.</p>
+                            <p>No Bee Mercado atuei como desenvolvedor Back-end e Front-end contemplando as seguintes features:</p>
+                            
+                            <ul class="custom-list mb-3">
+                                <li class="mb-2">Site institucional<br/><small class="text-2">Desenvolvimento parcial do o site institucional do Bee Mercado.</small></li>
+                                <li class="mb-2">Painel da empresa<br/><small class="text-2">Desenvolvimento parcial das interfaces de usuário e funcionalidades do painel das empresas.</small></li>
+                                <li class="mb-2">Plataforma de pedidos<br /><small class="text-2">Desenvolvimento parcial das interfaces e funcionalidades da área de pedidos.</small></li>
+                            </ul>
+
+                            <p class="mb-4">Ferramentas utilizadas: PHP, Laravel, MySQL, VueJs, Bootstrap 4 e VueJs.</p>
+
+                            <p><a href="https://bee.com.br/empresas" class="btn btn-light">Acessar site</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-session-item mb-5">
+                <div class="container mb-5">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="rounded-3 image-project" style="background-image: url('images/solar-services.png');"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Solar services</h3>
+                            <p>A Solar Services é uma empresa do ramo de energias renováveis especializada em energia solar. A empresa atua especialmente em regiões do semi-árido, onde tem alta incidência de raios solares.</p>
+                            <p>Nesse projeto atuei no desenvolvimento do site institucional utilizando HTML5, CSS3, Javascript, Bootstrap 4 e PHP.</p>
+                            <p><a href="https://solarservices.com.br/" class="btn btn-light">Acessar site</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-session-item mb-5">
+                <div class="container mb-5">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="rounded-3 image-project" style="background-image: url('images/pede-aky.png');"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Pede Aky</h3>
+                            <p>Pede Aky é um marketplace voltado para o cenário de pequenas cidades. O sistema possui um aplicativo onde usuário pode realizar o pedido e compra de produtos e serviços. Em um painel administrativo, as empresas podem gerenciar os pedidos, produtos, acessar relatórios entre outras funcionalidades.</p>
+                            <p>Nesse projeto atuei no desenvolvimento do aplicativo utilizando o SDK Flutter.</p>
+                            <p><a href="https://play.google.com/store/apps/details?id=br.com.pedeaky.delivery" class="btn btn-light">Ver aplicativo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-session-item mb-5">
+                <div class="container mb-5">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="rounded-3 image-project" style="background-image: url('images/supercop-delivery.png');"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Supercop Delivery</h3>
+                            <p>Silvercop Delivery é um aplicativo para supermercado utilizado por usuários para a realização das compras online. O aplicativo é integrado à plataforma de vendas Magento por meio de uma Api.</p>
+                            <p>Nesse projeto atuei no desenvolvimento do aplicativo utilizando o SDK Flutter.</p>
+                            <p><a href="https://play.google.com/store/apps/details?id=br.com.semekegroup.supercop" class="btn btn-light">Ver aplicativo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="container mb-5">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>Contato</h1>
+                        Se você se interessou por meu trabalho e deseja conversar comigo, você pode me contactar pelos canais abaixo: <br />
+                        Email: <a href="mailto:danilogocarlos@gmail.com" class="link-primary">danilogocarlos@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a href="https://wa.me/5584987729655" class="btn btn-light"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://github.com/danilogocarlos" class="btn btn-light"><i class="fa fa-github-alt"></i></a>
+                        <a href="https://linkedin.com/in/danilogocarlos" class="btn btn-light"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mb-5">
+        <div class="row mb-5">
+            <div class="col" style="border: 1px solid #6272A4;"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-2">Copyright ©</p>
+                <p>Danilo Carlos 2021</p>
+            </div>
+            <div class="col text-end">
+                <p class="text-2">Coding my way.</p>
+                <p>danilogocarlos@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
